@@ -1,0 +1,128 @@
+<html>
+
+
+<head>
+    
+        <title>Library </title>    
+
+
+        <style>
+            #div1{
+                margin-left:35%;
+                position:absolute;
+                align-content: center;
+            }
+             #div2{
+                margin-left:35%;
+                margin-top:12%;
+                position:absolute;
+                align-content: center;
+            }
+
+             #div3{
+                margin-left:35%;
+                margin-top:32%;
+                position:absolute;
+                align-content: center;
+            }
+
+             #div4{
+                margin-left:35%;
+                margin-top:45%;
+                position:absolute;
+                align-content: center;
+            }
+
+            #div5{
+                margin-left:35%;
+                margin-top:55%;
+                position:absolute;
+                align-content: center;
+            }
+
+            #div6{
+                margin-left:35%;
+                margin-top:75%;
+                position:absolute;
+                align-content: center;
+            }
+
+             #div7{
+                margin-left:35%;
+                margin-top:85%;
+                position:absolute;
+                align-content: center;
+            }
+
+         </style>   
+ </head>
+
+
+ <body>
+
+    <div id="div1">
+             <h1 > Library Management </h1>
+
+             <p id="p1"> </p>
+    </div>         
+
+
+    <div id="div2">
+             <h1 > List Of Available Books </h1>
+           <button onclick="GetList()">List</button>
+             <ul id="ul1"> </ul>
+    </div>  
+
+
+
+     <div id="div3">
+             <h3 > Search Books </h3>
+            <input type="number" id="SearchId"><button onclick="Search()">Search</button>
+            <p id="seachP"> </p>
+    </div>  
+
+
+    <div id="div4">
+             <h3 > Order Books </h3>
+            <input type="number" id="orderId" placeholder="BookID"> 
+            <input type="text" id="custName" placeholder="CustomerNAme">
+            <button onclick="Order()">Order</button>
+            <p id="seachP"> </p>
+    </div>  
+<div id="div5">
+           <h3 > Get Order List </h3>
+            <button onclick="GetOrders()">Order</button>
+            <ul id="ul2"> </ul>
+    </div>  
+ 
+
+
+<div id="div6">
+             <h1 >Search Order </h1>
+              <input type="text" id="searchOrderId" placeholder="EnterOrderID">
+             <button onclick="SearchOrder()">Get Order</button>
+              <p id="orderS"> </p>
+    </div>  
+
+<div id="div7">
+             <h1 >Delete Order or Patch Order</h1>
+              <input type="text" id="deleteId" placeholder="EnterOrderID">
+             <button onclick="deleteOrder()">Delete Order</button><br>
+             <input type="text" id="patchName" placeholder="Enter Customer Name">
+              <button onclick="PatchOrder()">Patch Order</button>
+              <p id="orderD"> </p>
+    </div>  
+       <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+         <script src="LibraryManagement.js">
+
+          
+
+        </script>   
+
+ </body>    
+ 
+
+
+
+</html>
